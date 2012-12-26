@@ -1,0 +1,19 @@
+{
+  "name": "crosstalk-worker-api-aws-s3",
+  "version": "1.0.0",
+  "description": "Crosstalk Worker for the AWS S3",
+  "devDependencies": {
+    "crosstalk-ide": "2.x.x"
+  },
+  "scripts": {
+    "test": "node test/integration.test.js"
+  },
+  "author": "Crosstalk Systems Inc. <developers@crxtalk.com>",
+  "maintainers": [
+    "Tristan Slominski <tristan.slominski@gmail.com>"
+  ],
+  "crosstalk": {
+    "type": "worker"
+  },
+  "private": true
+}
