@@ -448,20 +448,7 @@ var parseGetResponse = function parseGetResponse ( dataBag, callback ) {
     if ( dataBag.responseBody && dataBag.actionType === "bucket" ) {
       return parseGetBucketResponse( dataBag, callback );
     } else if ( dataBag.responseBody ) {
-
-      // convert to JavaScript object as a convenience
-      if ( dataBag.responseHeaders[ 'content-type' ] === 'application/json' ) {
-        
-        try {
-          result.object = JSON.parse( dataBag.responseBody );
-        } catch ( exception ) {
-          result.object = dataBag.responseBody;
-        }
-
-      } else {
-        result.object = dataBag.responseBody;
-      }
-
+      result.object = dataBag.responseBody;
     } // if ( dataBag.responseBody )
     if ( dataBag.responseHeaders[ 'etag' ] ) {
       result.ETag = dataBag.responseHeaders[ 'etag' ].replace( /"/g, "" );
