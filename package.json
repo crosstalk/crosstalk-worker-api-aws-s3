@@ -1,6 +1,6 @@
 {
   "name": "crosstalk-worker-api-aws-s3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Crosstalk Worker for the AWS S3",
   "devDependencies": {
     "crosstalk-ide": "2.x.x"
