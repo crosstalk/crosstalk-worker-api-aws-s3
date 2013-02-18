@@ -3,6 +3,8 @@ crosstalk-worker-api-aws-s3
 
 `crosstalk-worker-api-aws-s3` is a Crosstalk worker for interacting with AWS S3 API.
 
+_Click on links below for detailed documentation._
+
 ## Configuration
 
 ```json
